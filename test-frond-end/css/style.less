@@ -1,0 +1,122 @@
+@site-width: 1080px;
+@site-height: 720px;
+@m-center: 0 auto;
+@img-width: 200px;
+@img-heigth: 200px;
+
+body {
+    width: @site-width;
+    height: @site-height;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+header {
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-around;
+    margin: @m-center;
+    margin-top: 100px;
+    .logo {
+        align-self: center;
+    }
+}
+
+nav {
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+    li {
+        padding: 10px;
+        font-size: 1.3em;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        transition-property: color;
+        transition-duration: 0.4s;
+    }
+    a:hover {
+        color: bisque;
+        
+    }
+    #basket-count {
+        color: indianred;
+    }
+    #basket-price {
+        padding-left: 10px;
+    }
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vertical {
+    flex-direction: column;
+    
+}
+
+.hor {
+    flex-direction: row;
+}
+
+.item {
+    padding-right: 70px;
+    padding-bottom: 100px;
+    width: @img-width;
+    height: @img-heigth + 100px;
+    h2 {
+        font-size: 1.1em;
+        text-align: center;
+    }
+    img {
+        width: @img-width;
+        height: @img-heigth;
+    }
+    button {
+        margin-top: 20px;
+        display: block;
+        margin: @m-center;
+        border: 1px solid #000;
+        padding: 8px 20px;
+        background-color: #fff;
+        font-size: 1.1em;
+        transition: background-color, 0.3s;
+    }
+    button:hover {
+        background-color: skyblue;
+        cursor: pointer;
+    }
+}
+
+#delete-all {
+    
+    padding: 5px;
+    background-color: skyblue;
+    border: 1px solid #000;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.show {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+.all-price {
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+}
+
+
+
+
+
+
+
